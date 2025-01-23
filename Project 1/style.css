@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+body {
+    background-image: url(bilawal.png);
+}
+
 :root {
-    --success-color: green;
+    --success-color: rgb(0, 128, 0);
     --error-color: orangered;
 }
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #ECF0F1;
+    background-color: #fbfeff;
     font-family: "Open Sans", serif;
     display: flex;
     align-items: center;
@@ -80,6 +85,7 @@ h2 {
 .form-control.error small {
     visibility: visible;
 }
+
 
 .form button {
     cursor: pointer;

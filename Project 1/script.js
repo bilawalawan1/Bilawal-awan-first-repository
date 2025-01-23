@@ -19,10 +19,10 @@ function showError(input,message) {
 
 //Function to update class for succes
 function showSuccess(input) {
-        //Get the parent element of the input field (.form-control)
-        const formcontrol = input.parentElement;
-        //Replace the class - add success
-    formcontrol.className = 'form-control success'
+    //Get the parent element of the input field (.form-control)
+    const formcontrol = input.parentElement;
+    //Replace the class - add success
+formcontrol.className = 'form-control success'
 }
 
 //Event Listeners
@@ -30,7 +30,6 @@ function showSuccess(input) {
 form.addEventListener('submit',function(e) {
     //Stop page from reloading on submit
     e.preventDefault();
-
     //Check to see if field meet required field requirement
     //Check if username input is empty
     if(username.value === ''){
@@ -52,7 +51,7 @@ form.addEventListener('submit',function(e) {
     } else {
         showSuccess(passward);
     }
-
+    
     //Check if passward input is empty
     if(passward2.value === ''){
         showError(passward2,'Conform Passward is required');
